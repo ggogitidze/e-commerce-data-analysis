@@ -57,18 +57,24 @@ EDA was performed to understand user behavior patterns using Python and visualiz
 
 ### Visualizations in Tableau
 
-1. **Demographics and Order Insights:**
-    - Gender distribution, device type usage, aging analysis.
-2. **Sales and Profit Analysis:**
-    - Sales trends, profit margins, average order quantities.
-3. **Shipping and Order Priority:**
-    - Shipping costs by device type, average shipping costs by order priority.
+1. **Hypothesis Testing:**
+      [View the Tableau Dashboard](https://public.tableau.com/app/profile/giorgi.gogitidze/viz/HypothesisTesting_17200713809870/Hypothesis)
+      ![Hypothesis Testing](Hypothesis.png)
+   
+2. **Sales and Profit Analysis:** 
+      [View the Tableau Dashboard](https://public.tableau.com/app/profile/giorgi.gogitidze/viz/SalesandProfitAnalysis_17200713244600/SalesandProfitAnalysis)
+      ![Sales and Profit Analysis](SalesandProfitAnalysis.png)
 
+3. **Anomaly Testing:**
+      [View the Tableau Dashboard](https://public.tableau.com/app/profile/giorgi.gogitidze/viz/AnomalyDetection_17200714394430/AnomalyDetection)
+      ![Anomaly Detection](AnomalyDetection.png)
 
 
 ## Hypothesis Testing
 
 Hypotheses were tested using formal statistical practices, including null and alternative hypotheses, and steps for testing these hypotheses using Python for statistical analysis and Tableau for visualization.
+
+
 
 ### 1. Hypothesis: Customers using mobile devices have a higher average order value.
 
