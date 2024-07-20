@@ -30,19 +30,19 @@ Data cleaning was performed using Python and SQLite in DBeaver. The steps involv
 
 ### Steps:
 
-1. **Load the dataset:**
+1. 
     ```python
     import pandas as pd
     file_path = 'E-commerce_Dataset.csv'
     df = pd.read_csv(file_path)
     ```
 
-2. **Handle missing values:**
+2. 
     ```python
     df.fillna(0, inplace=True)
     ```
 
-3. **Remove duplicates:**
+3. 
     ```python
     df.drop_duplicates(inplace=True)
     ```
@@ -112,10 +112,10 @@ Hypotheses were tested using formal statistical practices, including null and al
     import pandas as pd
     from scipy import stats
 
-    # Load dataset
+   
     df = pd.read_csv('Cleaned_E_commerce_Dataset_v1.csv')
 
-    # Separate discounted and non-discounted sales
+    
     discounted_sales = df[df['Discount'] > 0]['Sales']
     non_discounted_sales = df[df['Discount'] == 0]['Sales']
 
@@ -142,7 +142,7 @@ Hypotheses were tested using formal statistical practices, including null and al
     import pandas as pd
     from scipy import stats
 
-    # Load dataset
+    
     df = pd.read_csv('Cleaned_E_commerce_Dataset_v1.csv')
 
     # ANOVA test
@@ -171,7 +171,7 @@ Hypotheses were tested using formal statistical practices, including null and al
     import pandas as pd
     from scipy import stats
 
-    # Load dataset
+    
     df = pd.read_csv('Cleaned_E_commerce_Dataset_v1.csv')
     df['Order_Date'] = pd.to_datetime(df['Order_Date'])
     df['Month'] = df['Order_Date'].dt.month
@@ -210,10 +210,10 @@ Hypotheses were tested using formal statistical practices, including null and al
     import pandas as pd
     from scipy import stats
 
-    # Load the dataset
+   
     df = pd.read_csv('Cleaned_E_commerce_Dataset_v1.csv')
 
-    # Perform ANOVA test
+    # ANOVA test
     f_stat, p_value = stats.f_oneway(df[df['Product_Category'] == 'Auto & Accessories']['Shipping_Cost'],
                                      df[df['Product_Category'] == 'Electronic']['Shipping_Cost'],
                                      df[df['Product_Category'] == 'Fashion']['Shipping_Cost'],
